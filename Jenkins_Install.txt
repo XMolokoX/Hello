@@ -21,7 +21,7 @@ yum install jenkins -y
 #To start jenkins on a diff port
 #Update port number in /etc/sysconfig/jenkins
 service jenkins start
-sleep 5
+sleep 15
 #To fetch initial admin password
 
 cd /var/lib/jenkins/secrets/
