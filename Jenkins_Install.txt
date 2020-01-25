@@ -6,9 +6,6 @@ sudo yum install update -y
 #install java
 sudo yum install java-1.8.0 -y
 
-#Check and select one out of multiple java versions available
-sudo /usr/sbin/alternatives --config java
-
 #Download latest Jenkins code package
 sudo wget -O /etc/yum.repos.d/jenkins.repo http://pkg.jenkins-ci.org/redhat/jenkins.repo
 
@@ -24,6 +21,6 @@ sudo service jenkins start
 sleep 15
 #To fetch initial admin password
 
-#cd /var/lib/jenkins/secrets/
-#cat initialAdminPassword
+cd /var/lib/jenkins/secrets/
+cat initialAdminPassword
 
