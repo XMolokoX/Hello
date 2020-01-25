@@ -21,6 +21,6 @@ sudo service jenkins start
 sleep 15
 #To fetch initial admin password
 
-cd /var/lib/jenkins/secrets/
-cat initialAdminPassword
+#cd /var/lib/jenkins/secrets/
+#cat initialAdminPassword
 
