@@ -1,8 +1,8 @@
 #!/bin/bash
 cd /./opt
 sudo wget https://sonatype-download.global.ssl.fastly.net/nexus/3/nexus-3.0.2-02-unix.tar.gz
-tar -zxvf nexus-3.0.2-02-unix.tar.gz
-mv /opt/nexus-3.0.2-02 /opt/nexus
+sudo tar -zxvf nexus-3.0.2-02-unix.tar.gz
+sudo mv /opt/nexus-3.0.2-02 /opt/nexus
 sudo adduser nexus
 line=$(sed -n '/root/{/ALL/=}' /etc/sudoers)
 #line = ${cd /./home | ls -al}
