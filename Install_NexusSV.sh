@@ -12,6 +12,6 @@ echo "$line"
 #sed -ie '$line a nexus	ALL=(ALL)	ALL' /etc/sudoers
 sed -ie ''$line' a nexus	ALL=(ALL)	NOPASSWD: ALL' /etc/sudoers 
 chown -R nexus:nexus /opt/nexus
-sed -ie 's/run_as_user=""/run_as_user="nexus"/' /opt/nexus/bin/nexus.rd
+sed -ie 's/run_as_user=""/run_as_user="nexus"/' /opt/nexus/bin/nexus.rc
 ln -s /opt/nexus/bin/nexus /etc/init.d/nexus
 
