@@ -5,9 +5,10 @@ sudo yum install update -y
 sudo yum install java-1.8.0 -y
 
 cd /./opt
-sudo wget https://sonatype-download.global.ssl.fastly.net/nexus/3/nexus-3.0.2-02-unix.tar.gz
-sudo tar -zxvf nexus-3.0.2-02-unix.tar.gz
-sudo mv /opt/nexus-3.0.2-02 /opt/nexus
+
+sudo wget http://download.sonatype.com/nexus/3/nexus-3.15.1-01-unix.tar.gz
+sudo tar -zxvf nexus-3.15.1-01-unix.tar.gz
+sudo mv /opt/nexus-3.15.1-01 /opt/nexus
 sudo adduser nexus
 line=$(sudo sed -n '/root/{/ALL/=}' /etc/sudoers)
 #line = ${cd /./home | ls -al}
