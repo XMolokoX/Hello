@@ -1,6 +1,7 @@
 #!/bin/bash
-sudo yum install update -y
 
+sudo yum update -y
+sudo yum install wget -y
 #install java
 sudo yum install java-1.8.0-openjdk.x86_64 -y
 
