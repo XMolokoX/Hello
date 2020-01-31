@@ -19,4 +19,5 @@ sudo chown -R nexus:nexus /opt/nexus
 sudo chown -R nexus:nexus /opt/sonatype-work
 sudo sed -ie 's/run_as_user=""/run_as_user="nexus"/' /opt/nexus/bin/nexus.rc
 sudo ln -s /opt/nexus/bin/nexus /etc/init.d/nexus
+sudo chkconfig nexus on
 
