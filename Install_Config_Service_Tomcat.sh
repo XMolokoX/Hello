@@ -9,9 +9,9 @@ sudo mkdir -p /opt/tomcat
 sudo useradd -s /bin/nologin -g tomcat -d /opt/tomcat tomcat
 sudo cd ~
 sudo wget https://archive.apache.org/dist/tomcat/tomcat-8/v8.0.33/bin/apache-tomcat-8.0.33.tar.gz
-sudo tar -zxvf apache-tomcat-8.0.33.tar.gz -C /opt/tomcat --strip-components=1
+tar -zxvf apache-tomcat-8.0.33.tar.gz -C /opt/tomcat --strip-components=1
 sudo rm -rf apache*
-sudo cd /opt/tomcat
+cd /opt/tomcat
 sudo chgrp -R tomcat conf
 sudo chmod g+rwx conf
 sudo chmod g+r conf/*
