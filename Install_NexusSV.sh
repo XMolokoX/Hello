@@ -10,8 +10,8 @@ cd /./opt
 
 sudo wget -O nexus.tar.gz http://download.sonatype.com/nexus/3/nexus-3.15.1-01-unix.tar.gz
 	
-sudo tar -xvf nexus.tar.gz
-sudo mv /opt/nexus-3* /opt/nexus3
+sudo tar -zxvf nexus.tar.gz
+sudo mv /opt/nexus /opt/nexus3
 sudo adduser nexus
 line=$(sudo sed -n '/root/{/ALL/=}' /etc/sudoers)
 #line = ${cd /./home | ls -al}
