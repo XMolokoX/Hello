@@ -26,7 +26,7 @@ sudo chmod g+r bin/*
 sudo touch /etc/systemd/system/tomcat.service
 sudo cat <<EOT >> /etc/systemd/system/tomcat.service
 [Unit]
-Description=Apache Tomcat Web Application Container
+Description=Apache Tomcat Web Application
 After=syslog.target network.target
 
 [Service]
