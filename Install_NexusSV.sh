@@ -1,7 +1,7 @@
 #!/bin/bash
 
 sudo yum update -y
-sudo yum install wget -y
+
 #install java
 sudo yum install java-1.8.0-openjdk.x86_64 -y
 
@@ -13,6 +13,7 @@ sudo wget http://download.sonatype.com/nexus/3/nexus-3.15.1-01-unix.tar.gz
 sudo tar -zxvf nexus-3.15.1-01-unix.tar.gz
 sudo rm -rf nexus-3.15.1-01-unix.tar.gz
 sudo mv /opt/nexus-3* /opt/nexus
+sudo ln -s /opt/nexus
 sudo adduser nexus
 line=$(sudo sed -n '/root/{/ALL/=}' /etc/sudoers)
 #line = ${cd /./home | ls -al}
